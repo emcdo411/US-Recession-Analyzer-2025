@@ -1,51 +1,72 @@
-US-Recession-Analyzer-2025
+# US-Recession-Analyzer-2025
+
 A comprehensive analysis of the U.S. economic landscape in April 2025, designed for supply chain analysts, economists, White House press, Secretary of State briefing attendees, and non-technical audiences. This project leverages AI tools and RStudio to provide data-driven insights into recession risks, featuring visualizations, balanced perspectives from left- and right-leaning sources, and a professional landing page.
 
-Table of Contents
-Summary
-This project, developed using AI tools and RStudio, delivers a detailed examination of the U.S. economy as of April 14, 2025, addressing the question: Are we in a recession? If not, how close are we, and what can be done to mitigate risks? Here’s what was accomplished:
+## Table of Contents
+- [Summary](#summary)
+- [Features](#features)
+- [Data Sources](#data-sources)
+- [How to Run](#how-to-run)
+- [Code](#code)
+  - [app.R (Shiny App Code)](#appr-shiny-app-code)
+  - [styles.css (Custom Styling)](#stylescss-custom-styling)
+- [Why This Matters](#why-this-matters)
+- [Conclusion](#conclusion)
 
-Economic Analysis: Assessed recession risk using data from JPMorgan, Goldman Sachs, and the Federal Reserve, concluding a 40-60% likelihood of a recession by year-end due to tariff policies and economic uncertainty.
-Balanced Perspectives: Incorporated insights from left-leaning (e.g., The Guardian, TIME) and right-leaning (e.g., Forbes, Bankrate) sources to ensure a comprehensive view, highlighting tariff impacts and consumer spending resilience.
-Data Visualizations: Created interactive plots in RStudio using shiny, ggplot2, and dplyr, including:
-Recession probability trends (17% in November 2024 to 45% in April 2025).
-Economic indicators (GDP growth, unemployment, inflation) comparison.
-Public opinion on recession risk (65% of Americans believe a downturn is coming).
-Financial market trends (S&P 500 correction, yield curve inversion).
-Consumer debt levels ($1.21 trillion in credit card debt, 6% delinquency rate).
-Professional Design: Built a stunning landing page with a custom styles.css featuring a gradient background (soft blue to white to gray) that matches the White House and NBER logos, ensuring a polished look for White House press and Secretary of State audiences.
-Accessibility: Designed for both technical users (supply chain analysts, economists) and non-technical audiences (press, public) with clear explanations and intuitive navigation.
+## Summary
+
+This project, developed using AI tools and RStudio, delivers a detailed examination of the U.S. economy as of April 14, 2025, addressing the question: *Are we in a recession?* If not, how close are we, and what can be done to mitigate risks? Here’s what was accomplished:
+
+- **Economic Analysis**: Assessed recession risk using data from JPMorgan, Goldman Sachs, and the Federal Reserve, concluding a 40-60% likelihood of a recession by year-end due to tariff policies and economic uncertainty.
+- **Balanced Perspectives**: Incorporated insights from left-leaning (e.g., The Guardian, TIME) and right-leaning (e.g., Forbes, Bankrate) sources to ensure a comprehensive view, highlighting tariff impacts and consumer spending resilience.
+- **Data Visualizations**: Created interactive plots in RStudio using `shiny`, `ggplot2`, and `dplyr`, including:
+  - Recession probability trends (17% in November 2024 to 45% in April 2025).
+  - Economic indicators (GDP growth, unemployment, inflation) comparison.
+  - Public opinion on recession risk (65% of Americans believe a downturn is coming).
+  - Financial market trends (S&P 500 correction, yield curve inversion).
+  - Consumer debt levels ($1.21 trillion in credit card debt, 6% delinquency rate).
+- **Professional Design**: Built a stunning landing page with a custom `styles.css` featuring a gradient background (soft blue to white to gray) that matches the White House and NBER logos, ensuring a polished look for White House press and Secretary of State audiences.
+- **Accessibility**: Designed for both technical users (supply chain analysts, economists) and non-technical audiences (press, public) with clear explanations and intuitive navigation.
+
 AI tools facilitated data synthesis, visualization generation, and design, while RStudio enabled the creation of an interactive Shiny app to present the findings.
 
-Features
-Interactive Dashboard: A Shiny app with tabs for recession probability, economic indicators, public opinion, financial markets, consumer debt, and a detailed analysis section.
-Balanced Insights: Combines perspectives from left- and right-leaning sources to provide a holistic view of the economic landscape.
-Visualizations: Line plots, bar graphs, and dual-axis charts to illustrate key trends and comparisons.
-Professional Landing Page: A visually appealing entry point with White House and NBER branding, featuring a gradient design for a professional aesthetic.
-Non-Technical Friendly: Clear language and intuitive design ensure accessibility for all audiences, from economists to press members.
-Data Sources
-Economic Indicators: The Guardian, CNBC, TIME, Bankrate, Federal Reserve Bank of Atlanta (GDP contraction of 2.4% in Q1 2025).
-Recession Probabilities: JPMorgan (60% global recession risk), Goldman Sachs (45%), CNBC CFO survey (36%).
-Financial Markets: Forbes (yield curve inversion), TIME (S&P 500 correction of 10%).
-Consumer Debt: Newsweek ($1.21 trillion credit card debt, 6% delinquency rate).
-Public Opinion: Simulated based on Statista 2022 data (adjusted to 65% recession fear in 2025).
-How to Run
-Prerequisites:
-Install R and RStudio.
-Install required R packages: shiny, ggplot2, dplyr.
-Setup:
-Clone this repository: git clone https://github.com/yourusername/US-Recession-Analyzer-2025.git
-Set the working directory in RStudio: setwd("C:/Users/Veteran/Documents/RecessionProject")
-Ensure whitehouse-logo.png and nber-logo.png are in the www folder.
-Run the App:
-Open app.R in RStudio.
-Click "Run App" to launch the Shiny app.
-Start on the landing page and click "View Analysis Dashboard" to explore the data.
-Code
-app.R (Shiny App Code)
-R
+## Features
 
-Copy
+- **Interactive Dashboard**: A Shiny app with tabs for recession probability, economic indicators, public opinion, financial markets, consumer debt, and a detailed analysis section.
+- **Balanced Insights**: Combines perspectives from left- and right-leaning sources to provide a holistic view of the economic landscape.
+- **Visualizations**: Line plots, bar graphs, and dual-axis charts to illustrate key trends and comparisons.
+- **Professional Landing Page**: A visually appealing entry point with White House and NBER branding, featuring a gradient design for a professional aesthetic.
+- **Non-Technical Friendly**: Clear language and intuitive design ensure accessibility for all audiences, from economists to press members.
+
+## Data Sources
+
+- **Economic Indicators**: The Guardian, CNBC, TIME, Bankrate, Federal Reserve Bank of Atlanta (GDP contraction of 2.4% in Q1 2025).
+- **Recession Probabilities**: JPMorgan (60% global recession risk), Goldman Sachs (45%), CNBC CFO survey (36%).
+- **Financial Markets**: Forbes (yield curve inversion), TIME (S&P 500 correction of 10%).
+- **Consumer Debt**: Newsweek ($1.21 trillion credit card debt, 6% delinquency rate).
+- **Public Opinion**: Simulated based on Statista 2022 data (adjusted to 65% recession fear in 2025).
+
+## How to Run
+
+1. **Prerequisites**:
+   - Install R and RStudio.
+   - Install required R packages: `shiny`, `ggplot2`, `dplyr`.
+
+2. **Setup**:
+   - Clone this repository: `git clone https://github.com/yourusername/US-Recession-Analyzer-2025.git`
+   - Set the working directory in RStudio: `setwd("C:/Users/Veteran/Documents/RecessionProject")`
+   - Ensure `whitehouse-logo.png` and `nber-logo.png` are in the `www` folder.
+
+3. **Run the App**:
+   - Open `app.R` in RStudio.
+   - Click "Run App" to launch the Shiny app.
+   - Start on the landing page and click "View Analysis Dashboard" to explore the data.
+
+## Code
+
+### app.R (Shiny App Code)
+
+```R
 # Load required libraries
 library(shiny)
 library(ggplot2)
@@ -249,10 +270,11 @@ server <- function(input, output, session) {
 
 # Run the application
 shinyApp(ui = ui, server = server)
-styles.css (Custom Styling)
-css
+```
 
-Copy
+### styles.css (Custom Styling)
+
+```css
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -361,14 +383,27 @@ p {
   color: #333333;
   line-height: 1.6;
 }
-Why This Matters
+```
+
+## Why This Matters
+
 Understanding the risk of a U.S. recession in 2025 is critical for multiple stakeholders:
 
-Supply Chain Analysts: Tariffs, such as the 20% on Chinese goods and 25% on Canada and Mexico, are disrupting supply chains, increasing costs, and affecting inventory planning. The Institute for Supply Management’s PMI highlights rising input costs, which this project quantifies and visualizes.
-Economists: The analysis provides a data-driven assessment of recession risk (40-60% by year-end), incorporating financial market signals (yield curve inversion) and consumer debt trends ($1.21 trillion in credit card debt), offering a foundation for policy recommendations.
-White House Press & Secretary of State Audiences: The project aligns with White House briefings, presenting balanced insights from left- and right-leaning sources. It addresses policy impacts (e.g., tariffs reducing GDP growth by 0.5 percentage points) and public sentiment (65% recession fear), informing press narratives and diplomatic discussions.
-Non-Technical Audiences: Clear visualizations and explanations make complex economic data accessible, empowering the public to understand the economic climate and its implications for their lives.
+- **Supply Chain Analysts**: Tariffs, such as the 20% on Chinese goods and 25% on Canada and Mexico, are disrupting supply chains, increasing costs, and affecting inventory planning. The Institute for Supply Management’s PMI highlights rising input costs, which this project quantifies and visualizes.
+- **Economists**: The analysis provides a data-driven assessment of recession risk (40-60% by year-end), incorporating financial market signals (yield curve inversion) and consumer debt trends ($1.21 trillion in credit card debt), offering a foundation for policy recommendations.
+- **White House Press & Secretary of State Audiences**: The project aligns with White House briefings, presenting balanced insights from left- and right-leaning sources. It addresses policy impacts (e.g., tariffs reducing GDP growth by 0.5 percentage points) and public sentiment (65% recession fear), informing press narratives and diplomatic discussions.
+- **Non-Technical Audiences**: Clear visualizations and explanations make complex economic data accessible, empowering the public to understand the economic climate and its implications for their lives.
+
 This project bridges the gap between technical analysis and public communication, ensuring all stakeholders can engage with the data meaningfully.
 
-Conclusion
+## Conclusion
+
 The US-Recession-Analyzer-2025 project delivers a robust, accessible tool for understanding the U.S. economic landscape in April 2025. By leveraging AI tools and RStudio, it provides actionable insights for supply chain analysts, economists, and press members, while remaining approachable for non-technical audiences. The combination of balanced data, interactive visualizations, and a professional design makes this a valuable resource for anyone seeking to navigate the current economic challenges.
+
+
+### Notes
+- **Clickable Sections**: The Table of Contents now includes links to all sections, including the nested “Code” subsections for `app.R` and `styles.css`, ensuring easy navigation.
+- **Code Inclusion**: Both the `app.R` and `styles.css` files are fully included in the README, formatted as code blocks for clarity.
+- **Audience Targeting**: The content remains tailored for supply chain analysts, economists, White House press, Secretary of State audiences, and non-technical users, with clear explanations and professional tone.
+
+Since the repository name `US-Recession-Analyzer-2025` was approved in the previous step (assumed from the instruction to proceed), I’ve used it in the README. The LinkedIn post has already been provided in the previous response, so this completes the request. If you need further adjustments, let me know!
